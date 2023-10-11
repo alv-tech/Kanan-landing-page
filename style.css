@@ -2,20 +2,26 @@
   --max-width: 1440px;
 }
 
-body {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #F5F5FA;
+*,
+::before,
+::after {
+  box-sizing: border-box;
   margin: 0;
 }
 
-.content {
+body {
+  width: 100%;
+  background-color: #F5F5FA;
+  font-family: Inter;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  font-family: "Inter"
+}
+
+.content {
+  flex-direction: column;
   padding: 50px 80px;
   max-width: var(--max-width);
   width: 100%;
@@ -24,8 +30,34 @@ body {
 #hero {
   background: linear-gradient(180deg, #03BDF8 0%, rgba(3, 189, 248, 0.00) 100%);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero img {
   width: 400px;
+}
+
+h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 0;
+}
+
+p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 10px;
 }
