@@ -1,0 +1,31 @@
+:root {
+  --max-width: 1440px;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5FA;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 80px;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+#hero {
+  background: linear-gradient(180deg, #03BDF8 0%, rgba(3, 189, 248, 0.00) 100%);
+  width: 100%;
+}
+
+#hero img {
+  width: 400px;
+}
