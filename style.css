@@ -36,7 +36,8 @@ body {
   justify-content: center;
 }
 
-#hero .content {
+#hero .content,
+#features .content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,7 @@ p {
   padding-bottom: 10px;
 }
 
-#screens img{
+.screens {
   height: 500px;
   margin: 0 50px;
 
@@ -73,6 +74,30 @@ p {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
+#features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px;
+}
+
 @media (max-width: 768px) {
   #hero {
     flex-direction: column;
@@ -80,7 +105,7 @@ p {
   #hero img {
     width: 300px;
   }
-  #screens img {
+  .screens {
     height: 300px;
     margin: 0 20px;
   }
